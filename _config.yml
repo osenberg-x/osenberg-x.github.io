@@ -4,10 +4,11 @@
 
 # Site
 title: x
-subtitle: osenberg
-description: my blog
-keywords: 随笔
+subtitle: xx
+description: Focus on C++ CV Math
+keywords: "C++, CV, Math"
 author: osenberg-x
+#language: zh-CN
 language: en
 timezone:
 
@@ -25,7 +26,6 @@ about_dir: about
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
-schedule_dir: schedule
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -77,6 +77,12 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 theme: next
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
