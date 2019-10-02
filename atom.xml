@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-02T14:17:20.681Z</updated>
+  <updated>2019-10-02T14:19:04.576Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/10/02/%E5%88%A9%E7%94%A8-GitHub-Pages-Hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
     <id>http://yoursite.com/2019/10/02/利用-GitHub-Pages-Hexo-搭建个人博客踩坑记录/</id>
     <published>2019-10-02T02:58:28.000Z</published>
-    <updated>2019-10-02T14:17:20.681Z</updated>
+    <updated>2019-10-02T14:19:04.576Z</updated>
     
     <content type="html"><![CDATA[<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a><strong>开始</strong></h1><p>  前面的教程有很多人写过，我在这里就不重复了，只写一下我遇到的坑。<br>下面我会给出两个大神写的教程的链接地址:<br><img src="https://mp.weixin.qq.com/s?__biz=MzIxMzgyOTg1MQ==&amp;mid=2247487017&amp;idx=2&amp;sn=7045a4a9d3504c9a17a9c5298ecf638d&amp;chksm=97b19f9da0c6168b39edccdd61be744debd5a3e3119b5d2c2beb68dda2cf9ac0b72bfdd2c7e0&amp;mpshare=1&amp;scene=1&amp;srcid=&amp;sharer_sharetime=1569833504329&amp;sharer_shareid=04e78167e3ac21f8e8c450b7ebe8741f&amp;pass_ticket=iuamHqSSm2mp5dwlJyT2uR4bU%2Fo8bqPuJjbafVE5jWRrQlYEcGupbYfLb9ZUYxub#rd" alt="一篇微信公众号文章"></p><a id="more"></a><p><img src="https://blog.csdn.net/qq_36759224/article/details/82121420" alt="一篇 CSDN 的博客"></p><h1 id="我踩的坑"><a href="#我踩的坑" class="headerlink" title="我踩的坑"></a><strong>我踩的坑</strong></h1><ul><li>推荐使用 Linux 系统配置而不用 Windows 系统</li></ul><ul><li><p>我目前使用 next 主题 bug.</p><p>我一开始用的 next 主题版本为 7.4.0。此版本有一个问题，就是显示 menu 的时候会把 css 的代码也给显示出来.<br>后面请教了 next 主题的开发人员，切换到了 escape 分支，才可用了.</p></li></ul><ul><li><p>绑定自己的域名问题.</p><p>这里就不说我遇到的问题了，直接贴出我实际可用的操作吧.</p><ul><li>解析自己申请的域名，解析参数如下:<br>www CNAME 默认 xxx.github.io(自己的 github 项目地址)<br>@ CNAME 默认 xxx.github.io</li></ul><ul><li>在配置的 hexo 项目的 source 目录下创建 CNAME 文件(没有任何后缀)，文件内填写自己的域名 xxx.com(或者其他后缀), 注意前面不加 http 或者 www 只需要填写 xxx.com</li></ul><ul><li>在 github 的 xxx.github.io —&gt; setting —&gt; Github Pages —&gt; Custom domain 填写 xxx.com(不需要加 http 或者 www)</li></ul><ul><li>配置完成之后可能需要等待几分钟到 24 小时不等，才会生效.</li></ul></li></ul>]]></content>
     
