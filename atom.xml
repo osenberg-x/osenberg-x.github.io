@@ -5,9 +5,9 @@
   <subtitle>xx</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="www.oxopen.xyz/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2019-09-30T02:30:28.607Z</updated>
-  <id>www.oxopen.xyz/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>osenberg-x</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="www.oxopen.xyz/2019/09/30/hello-world/"/>
-    <id>www.oxopen.xyz/2019/09/30/hello-world/</id>
+    <link href="http://yoursite.com/2019/09/30/hello-world/"/>
+    <id>http://yoursite.com/2019/09/30/hello-world/</id>
     <published>2019-09-30T02:30:28.607Z</published>
     <updated>2019-09-30T02:30:28.607Z</updated>
     
