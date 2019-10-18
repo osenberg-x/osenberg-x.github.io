@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Ubuntu常用命令记录]]></title>
-    <url>%2F2019%2F10%2F18%2FUbuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[Ubuntu 找出大文件并删除1sudo find /var/tmp -type f -size +10000k -delete]]></content>
+    <title><![CDATA[常用命令记录]]></title>
+    <url>%2F2019%2F10%2F18%2F%E5%90%84%E4%B8%AA%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[Ubuntu 查找大目录并排序1du -h / --max-depth=1 | sort -hr | head -n 10 Ubuntu 找出大文件并删除1sudo find /var/tmp -type f -size +10000k -delete Ubuntu 查看 USB 视频设备详细信息1v4l2-ctl --all -d /dev/video0 Windows 进入 DOS 命令行, 不重启机器生效环境变量1set PATH=C:]]></content>
       <categories>
-        <category>Linux/Unix</category>
+        <category>Linux/Unix/Windows/Mac</category>
       </categories>
       <tags>
-        <tag>Ubuntu</tag>
+        <tag>Linux/Unix/Windows/Mac</tag>
         <tag>命令</tag>
       </tags>
   </entry>
