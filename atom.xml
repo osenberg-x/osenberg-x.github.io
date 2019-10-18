@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-02T14:36:28.967Z</updated>
+  <updated>2019-10-18T09:33:45.982Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu常用命令记录</title>
+    <link href="http://yoursite.com/2019/10/18/Ubuntu%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2019/10/18/Ubuntu常用命令记录/</id>
+    <published>2019-10-18T09:22:49.000Z</published>
+    <updated>2019-10-18T09:33:45.982Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Ubuntu-找出大文件并删除"><a href="#Ubuntu-找出大文件并删除" class="headerlink" title="Ubuntu 找出大文件并删除"></a>Ubuntu 找出大文件并删除</h1><a id="more"></a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo find /var/tmp -type f -size +10000k -delete</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Ubuntu-找出大文件并删除&quot;&gt;&lt;a href=&quot;#Ubuntu-找出大文件并删除&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu 找出大文件并删除&quot;&gt;&lt;/a&gt;Ubuntu 找出大文件并删除&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux/Unix" scheme="http://yoursite.com/categories/Linux-Unix/"/>
+    
+    
+      <category term="Ubuntu" scheme="http://yoursite.com/tags/Ubuntu/"/>
+    
+      <category term="命令" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
   
   <entry>
     <title>利用 GitHub Pages &amp;&amp; Hexo 搭建个人博客踩坑记录</title>
