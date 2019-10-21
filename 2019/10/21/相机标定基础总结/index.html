@@ -56,20 +56,20 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta name="keywords" content="C++, CV, Math">
+  <meta name="description" content="名词解释相机标定在图像测量过程以及机器视觉应用中，为确定空间物体表面某点的三维几何位置与其在图像中对应点之间的相互关系，必须建立相机成像的几何模型，这些几何模型参数就是**相机参数。在大多数情况下，这些参数必须通过实验与计算才能得到，这个求解参数的过程就称之为相机标定**">
+<meta name="keywords" content="calibration,CV">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/09/30/hello-world/index.html">
+<meta property="og:title" content="相机标定基础总结">
+<meta property="og:url" content="http://yoursite.com/2019/10/21/相机标定基础总结/index.html">
 <meta property="og:site_name" content="x">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="名词解释相机标定在图像测量过程以及机器视觉应用中，为确定空间物体表面某点的三维几何位置与其在图像中对应点之间的相互关系，必须建立相机成像的几何模型，这些几何模型参数就是**相机参数。在大多数情况下，这些参数必须通过实验与计算才能得到，这个求解参数的过程就称之为相机标定**">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-30T02:30:28.607Z">
+<meta property="og:updated_time" content="2019-10-21T09:01:36.005Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="相机标定基础总结">
+<meta name="twitter:description" content="名词解释相机标定在图像测量过程以及机器视觉应用中，为确定空间物体表面某点的三维几何位置与其在图像中对应点之间的相互关系，必须建立相机成像的几何模型，这些几何模型参数就是**相机参数。在大多数情况下，这些参数必须通过实验与计算才能得到，这个求解参数的过程就称之为相机标定**">
 
-<link rel="canonical" href="http://yoursite.com/2019/09/30/hello-world/index.html">
+<link rel="canonical" href="http://yoursite.com/2019/10/21/相机标定基础总结/index.html">
 
 
 <script id="page-configurations">
@@ -83,7 +83,7 @@
   };
 </script>
 
-  <title>Hello World | x</title>
+  <title>相机标定基础总结 | x</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/30/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/21/相机标定基础总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="osenberg-x">
@@ -265,7 +265,7 @@
       <meta itemprop="name" content="x">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">相机标定基础总结
 
           
         </h1>
@@ -281,7 +281,24 @@
                 
               
 
-              <time title="Created: 2019-09-30 10:30:28" itemprop="dateCreated datePublished" datetime="2019-09-30T10:30:28+08:00">2019-09-30</time>
+              <time title="Created: 2019-10-21 15:40:38 / Modified: 17:01:36" itemprop="dateCreated datePublished" datetime="2019-10-21T15:40:38+08:00">2019-10-21</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CV/" itemprop="url" rel="index"><span itemprop="name">CV</span></a></span>
+
+                
+                
+              
             </span>
           
 
@@ -296,15 +313,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h1><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><p><em>在图像测量过程以及机器视觉应用中，为确定空间物体表面某点的三维几何位置与其在图像中对应点之间的相互关系，必须建立相机成像的几何模型，这些几何模型参数就是**</em>相机参数<strong><em>。<br>在大多数情况下，这些参数必须通过实验与计算才能得到，这个求解参数的过程就称之为</em></strong>相机标定<em>**</em></p><a id="more"></a>
+<p><strong>个人理解</strong>: 图像在计算中的表示为一个二维的数组的数据，而现实世界中物体是三维的。相机标定就是找出三维物体的位置到计算机中二维数据中对应点的转换关系的参数。</p>
+<h2 id="世界坐标系"><a href="#世界坐标系" class="headerlink" title="世界坐标系"></a>世界坐标系</h2><p><strong><em>*世界坐标系</em></strong> (world coordinate)  (Xw, Yw, Zw) ,  也称测量坐标系，是一个三维直角坐标系，以其为基准可以描述相机和待测物体的空间位置。世界坐标系的位置可以根据实际情况自由确定。*</p>
+<h2 id="相机坐标系"><a href="#相机坐标系" class="headerlink" title="相机坐标系"></a>相机坐标系</h2><p><strong><em>*相机坐标系</em></strong> (camera coordinate) (Xc, Yc, Zc)，也是一个三维直角坐标系，原点位于镜头光芯处， Zc 轴与光轴重合，垂直与成像平面，且投影方向为正方向。Xc, Yc 与图像物理坐标系的 x, y 轴平行。*</p>
 
     </div>
 
@@ -321,21 +333,32 @@
       
 
       <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/calibration/" rel="tag"><i class="fa fa-tag"></i> calibration</a>
+            
+              <a href="/tags/CV/" rel="tag"><i class="fa fa-tag"></i> CV</a>
+            
+          </div>
+        
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
+                <a href="/2019/10/21/泰勒展开式/" rel="next" title="泰勒展开式">
+                  <i class="fa fa-chevron-left"></i> 泰勒展开式
+                </a>
+              
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/10/02/利用-GitHub-Pages-Hexo-搭建个人博客踩坑记录/" rel="prev" title="利用 GitHub Pages && Hexo 搭建个人博客踩坑记录">
-                  利用 GitHub Pages && Hexo 搭建个人博客踩坑记录 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -387,7 +410,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#名词解释"><span class="nav-number">1.</span> <span class="nav-text">名词解释</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#相机标定"><span class="nav-number">1.1.</span> <span class="nav-text">相机标定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界坐标系"><span class="nav-number">1.2.</span> <span class="nav-text">世界坐标系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相机坐标系"><span class="nav-number">1.3.</span> <span class="nav-text">相机坐标系</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -592,7 +615,7 @@ window.addEventListener('pjax:success', () => {
       repo: 'osenberg-x.github.io',
       owner: 'osenberg-x',
       admin: ['osenberg-x'],
-      id: 'f1eee7913201546966fd5a1724684d16',
+      id: 'd1d51b3303e510c28d4f518ba125557b',
         language: 'en',
       
       distractionFreeMode: 'true'
