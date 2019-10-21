@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-18T09:41:39.149Z</updated>
+  <updated>2019-10-21T07:38:24.753Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>泰勒展开式</title>
+    <link href="http://yoursite.com/2019/10/21/%E6%B3%B0%E5%8B%92%E5%B1%95%E5%BC%80%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/10/21/泰勒展开式/</id>
+    <published>2019-10-21T07:36:56.000Z</published>
+    <updated>2019-10-21T07:38:24.753Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="math" scheme="http://yoursite.com/categories/math/"/>
+    
+    
+      <category term="泰勒" scheme="http://yoursite.com/tags/%E6%B3%B0%E5%8B%92/"/>
+    
+      <category term="math" scheme="http://yoursite.com/tags/math/"/>
+    
+  </entry>
   
   <entry>
     <title>常用命令记录</title>
