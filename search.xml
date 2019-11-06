@@ -5,7 +5,7 @@
     <url>%2F2019%2F11%2F06%2FGit%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%2F</url>
     <content type="text"><![CDATA[将本地代码上传到远程的空仓库的 master 分支中 初始化本地项目 1git init . 为本地项目添加远程仓库链接 1git remote add origin http://****.git 链接为新建的远程仓库地址 将代码加入 git 管理并提交 12git add .git commit -m &quot;description&quot; 将提交推送到远程 1git push -u origin master 成功之后，在远程仓库就可以看到自己的代码了.]]></content>
       <categories>
-        <category>tool</category>
+        <category>tools</category>
       </categories>
       <tags>
         <tag>git</tag>
