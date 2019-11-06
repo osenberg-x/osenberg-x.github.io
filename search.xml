@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Git命令总结]]></title>
     <url>%2F2019%2F11%2F06%2FGit%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[将本地代码上传到远程的空仓库的 master 分支中 初始化本地项目 1git init . 为本地项目添加远程仓库链接 1git remote add origin http://****.git 链接为新建的远程仓库地址 将代码加入 git 管理并提交 12git add .git commit -m &quot;description&quot; 将提交推送到远程 1git push -u origin master 成功之后，在远程仓库就可以看到自己的代码了.]]></content>
+    <content type="text"><![CDATA[将本地代码上传到远程的空仓库的 master 分支中 初始化本地项目 1git init . 为本地项目添加远程仓库链接 1git remote add origin http://****.git 链接为新建的远程仓库地址 将代码加入 git 管理并提交 12git add .git commit -m &quot;description&quot; 将提交推送到远程 1git push -u origin master 成功之后，在远程仓库就可以看到自己的代码了. git submodule 将 A 仓库当作 B 仓库的 submodule, 在 B 仓库的目录执行1git submodule add http://A.git third_party/A http://A.git 为 A 仓库的地址. third_party/A 为 A 仓库在 B 仓库的位置路径(自己设定) 成功之后 B 仓库目录下会生成一个 .gitmodule 文件, 记得将此文件提交并推送. 更新、拉取 submodule12git submodule initgit submodule update]]></content>
       <categories>
         <category>tools</category>
       </categories>
